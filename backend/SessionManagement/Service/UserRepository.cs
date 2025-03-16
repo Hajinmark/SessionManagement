@@ -22,6 +22,23 @@ namespace SessionManagement.Service
             this._config = _config;
         }
 
+        public async Task<List<UserList>> GetUserDetails(string username)
+        {
+            var user = await(from u in dbContext.Users
+                       join ud in dbContext.UserDetails on u.UserID equals ud.UserID
+                       where u.Username == username
+                       select new UserList()
+                       {
+                           Username = u.Username,
+                           Email = u.Email,
+                           RoleType = u.RoleType,
+                           FirstName = ud.FirstName,
+                           LastName = ud.LastName
+                       }).ToListAsync();
+
+            return user;
+        }
+
         public async Task<AuthenticationDTO> LoginUser(UserLogin user)
         {
             var userLogin = await dbContext.Users
@@ -42,7 +59,7 @@ namespace SessionManagement.Service
                 // Successfully Login
                 else
                 {
-                    var token = GenerateToken(user);
+                    var token = GenerateToken(user, userLogin.RoleType);
                     return new AuthenticationDTO { Message = "Successfully Login", Token = token.Token, IsLogin = true, Expiration = token.Expiration};
                 }
                
@@ -72,6 +89,7 @@ namespace SessionManagement.Service
                         CreatedAt = DateTime.UtcNow,
                         UpdatedAt = DateTime.UtcNow,
                         IsActive = user.IsActive,
+                        RoleType = user.RoleType
                     };
 
                     dbContext.Users.Add(addUser);   
@@ -100,19 +118,21 @@ namespace SessionManagement.Service
             }
         }
 
-        private AuthenticationDTO GenerateToken(UserLogin user)
+        private AuthenticationDTO GenerateToken(UserLogin user, string role)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var claims = new[]
             {
-                new Claim(ClaimTypes.NameIdentifier,user.Username)
+                new Claim(ClaimTypes.Name,user.Username),
+                new Claim(ClaimTypes.Role, role)
             };
 
             var expiration = DateTime.UtcNow.AddMinutes(1);
 
-            var token = new JwtSecurityToken(_config["Jwt:Issuer"],
-                _config["Jwt:Audience"],
+            var token = new JwtSecurityToken(
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
                 claims,
                 expires: expiration,
                 signingCredentials: credentials);
@@ -121,6 +141,8 @@ namespace SessionManagement.Service
 
             return new AuthenticationDTO { Token = tokenString, Expiration = expiration };
         }
+
+
 
     }
 }

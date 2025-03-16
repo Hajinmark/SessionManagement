@@ -75,3 +75,4 @@ C:\Users\markg\Desktop\PersonalProject\SessionManagement\backend\SessionManageme
 C:\Users\markg\Desktop\PersonalProject\SessionManagement\backend\SessionManagement\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\markg\Desktop\PersonalProject\SessionManagement\backend\SessionManagement\obj\Debug\net6.0\SessionManagement.Properties.Resources.resources
 C:\Users\markg\Desktop\PersonalProject\SessionManagement\backend\SessionManagement\obj\Debug\net6.0\SessionManagement.csproj.GenerateResource.cache
+C:\Users\markg\Desktop\PersonalProject\SessionManagement\backend\SessionManagement\obj\Debug\net6.0\SessionManagement.sourcelink.json

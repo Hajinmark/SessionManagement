@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -66,24 +67,27 @@ namespace SessionManagement.Controllers
             }
         }
 
-        //private string GenerateToken(UserLogin user)
-        //{
-        //    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-        //    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-        //    var claims = new[]
-        //    {
-        //        new Claim(ClaimTypes.NameIdentifier,user.Username)
-        //    };
-        //    var token = new JwtSecurityToken(_config["Jwt:Issuer"],
-        //        _config["Jwt:Audience"],
-        //        claims,
-        //        expires: DateTime.Now.AddMinutes(1),
-        //        signingCredentials: credentials);
+        [HttpGet("GetUserDetails")]
+        [Authorize(Roles = "Manager")]
+        public async Task<IActionResult> GetUserDetails(string username)
+        {
+            var usernameDetails = await service.GetUserDetails(username);   
 
+            try
+            {
+                if(usernameDetails != null)
+                {
+                    return Ok(usernameDetails);
+                }
 
-        //    return new JwtSecurityTokenHandler().WriteToken(token);
-        //}
+                return NotFound("No Data");
+            }
 
+            catch
+            {
+                return Unauthorized("Not allowed to view this");
+            }
+        }
 
     }
 }

@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|c:\\users\\markg\\desktop\\personalproject\\sessionmanagement\\backend\\sessionmanagement\\models\\dto\\authenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|solutionrelative:models\\dto\\authenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|c:\\users\\markg\\desktop\\personalproject\\sessionmanagement\\backend\\sessionmanagement\\service\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|solutionrelative:service\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|c:\\users\\markg\\desktop\\personalproject\\sessionmanagement\\backend\\sessionmanagement\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|c:\\users\\markg\\desktop\\personalproject\\sessionmanagement\\backend\\sessionmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|c:\\users\\markg\\desktop\\personalproject\\sessionmanagement\\backend\\sessionmanagement\\service\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|solutionrelative:service\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8EEB5E40-FE78-430D-9BED-11B023245D77}|SessionManagement.csproj|c:\\users\\markg\\desktop\\personalproject\\sessionmanagement\\backend\\sessionmanagement\\interface\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,19 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAuwDEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAmwEkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T14:45:31.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Interface\\IUser.cs",
+              "RelativeDocumentMoniker": "Interface\\IUser.cs",
+              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Interface\\IUser.cs",
+              "RelativeToolTip": "Interface\\IUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T15:11:00.906Z",
               "EditorCaption": ""
             },
             {
@@ -53,48 +58,10 @@
               "RelativeDocumentMoniker": "Service\\UserRepository.cs",
               "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Service\\UserRepository.cs",
               "RelativeToolTip": "Service\\UserRepository.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAewHoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wCMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T14:32:55.476Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Models\\DTO\\AuthenticationDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTO\\AuthenticationDTO.cs",
-              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Models\\DTO\\AuthenticationDTO.cs",
-              "RelativeToolTip": "Models\\DTO\\AuthenticationDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T14:13:16.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T15:15:43.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Interface\\IUser.cs",
-              "RelativeDocumentMoniker": "Interface\\IUser.cs",
-              "ToolTip": "C:\\Users\\markg\\Desktop\\PersonalProject\\SessionManagement\\backend\\SessionManagement\\Interface\\IUser.cs",
-              "RelativeToolTip": "Interface\\IUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T15:11:00.906Z"
             }
           ]
         }

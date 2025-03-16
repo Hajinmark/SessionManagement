@@ -6,5 +6,6 @@ namespace SessionManagement.Interface
     {
         Task<bool> RegisterUser(AddUser user);
         Task<AuthenticationDTO> LoginUser(UserLogin user);
+        Task<List<UserList>> GetUserDetails(string username);
     }
 }

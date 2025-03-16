@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "SessionManagement.Controllers.LoginController",
+    "Method": "GetUserDetails",
+    "RelativePath": "api/Login/GetUserDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionManagement.Controllers.LoginController",
     "Method": "LoginUser",
     "RelativePath": "api/Login/LoginUser",
     "HttpMethod": "POST",
